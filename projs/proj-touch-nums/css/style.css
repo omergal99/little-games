@@ -18,7 +18,7 @@ body {
 }
 
 .levelBar tr td {
-    width: 55px;
+    width: 60px;
     height: 35px;
     background-color: rgb(35, 65, 88);
     color: rgb(236, 231, 231);
