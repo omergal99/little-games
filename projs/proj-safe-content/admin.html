@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="icon" href="img/logo3.png" />
+
+</head>
+
+<body onload="init()">
+    <h1>Hello ADMIN !</h1>
+
+    <button onclick="window.location.href='index.html'" type="button" class="back-btn">Back</button>
+
+    <div class="users-div">
+        <table class="users-table">
+            <thead class="users-table-head"></thead>
+            <tbody class="users-table-body"></tbody>
+        </table>
+    </div>
+    <div class="users-div2"></div>
+
+    <script src="js/storage-service.js"></script>
+    <script src="js/user-service.js"></script>
+    <script src="js/admin-controller.js"></script>
+</body>
+
+</html>

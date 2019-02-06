@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>🧞‍Guess Who</title>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" href="img/layout/logo.png" />
+
+</head>
+
+<body>
+    <header class="box">
+        <h1>Guess...</h1>
+        <img src="img/layout/logo.png" />
+        <h4 class="wrong-fill"></h4>
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;Who?!</h1>
+    </header>
+    <button onclick="openTree()" class="tree-btn">Open Tree</button>
+
+    <main>
+        <section class="game-start">
+            <h2>Think of Someone...</h2>
+            <button onclick="onStartGuessing()" class="btn btn-lg btn-success">I'm Ready!</button>
+        </section>
+
+        <section class="quest" style="display: none">
+            <h2></h2>
+            <button onclick="onUserResponse('yes')" class="btn btn-info">Yes</button>
+            <button onclick="onUserResponse('no')" class="btn btn-danger">No</button>
+        </section>
+
+        <section class="play-again" style="display: none">
+            <h4>🧞‍♂️ Now i'm feel like a real Genie 🧞‍♀️</h4>
+            <button onclick="playAgain()" class="btn btn-lg btn-warning">Play Again!</button>
+        </section>
+
+        <section class="new-quest" style="display: none">
+            <h2>OK, I gave up...</h2>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="newGuess" class="col-sm-12 control-label">You thought of: </label>
+                    <div class="col-sm-12">
+                        <input name="newGuess" type="txt" class="form-control" id="newGuess" placeholder="Your Guess" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="newQuest" class="col-sm-12 control-label">Question to differentiate</label>
+                    <div class="col-sm-12">
+                        <input name="newQuest" type="txt" class="form-control" id="newQuest" placeholder="The answer is YES for yours" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-12">
+                        <button class="make-smartr-btn" type="submit" onclick="onAddGuess();return false;">
+              Make me Smarter!
+            </button>
+
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <div class="tree hide">
+
+    </div>
+
+    <footer>
+        Coding Academy &copy; 2019
+    </footer>
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/quest-service.js"></script>
+    <script src="js/app.js"></script>
+    <script src="lib/bootstrap/bootstrap.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+body {
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+    background-color: rgb(255, 238, 223);
+    margin-top: 10px;
+}
+
+.levelBar {
+    margin: 0 auto;
+    text-align: center;
+    border-spacing: 6px;
+}
+
+.stopWatch {
+    text-align: start;
+    padding-left: 6px;
+}
+
+.levelBar tr td {
+    width: 55px;
+    height: 35px;
+    background-color: rgb(35, 65, 88);
+    color: rgb(236, 231, 231);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.levelBar .levels td {
+    background-color: rgb(167, 209, 243);
+    color: rgb(36, 32, 32);
+    cursor: pointer;
+    border: 1.5px solid rgb(31, 57, 78);
+    font-size: 20px;
+}
+
+.levelBar .levels td:hover {
+    color: rgb(211, 206, 206);
+    background-color: rgb(33, 48, 56);
+}
+
+.hover:hover {
+    color: rgb(211, 206, 206);
+    background-color: rgb(33, 48, 56);
+}
+
+.tableGame {
+    margin: 0 auto;
+    border-spacing: 5px;
+    text-align: center;
+    border: 1.5px solid rgb(183, 220, 250);
+}
+
+.tableGame tr td {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: rgb(230, 230, 230);
+    border: 1.5px solid steelblue;
+    background-color: rgb(80, 132, 175);
+    font-family: arial;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.tableGame tr td:hover {
+    color: rgb(12, 11, 11);
+}
+
+.finishGame {
+    margin: 0 auto;
+    text-align: center;
+    border-spacing: 6px;
+}
+
+.finishGame tr {
+    width: 55px;
+    height: 35px;
+    background-color: rgb(35, 65, 88);
+    color: rgb(236, 231, 231);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.hide {
+    display: none;
+}

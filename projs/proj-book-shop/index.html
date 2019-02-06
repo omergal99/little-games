@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Book📘Shop</title>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/icon.png" />
+</head>
+
+<body onload="init()">
+
+    <h1>Welcome to my Book📘Shop</h1>
+
+    <button class="btn-create-book" onclick="openNewBookWindow()">Create new book</button>
+
+    <form class="form-new-book hide">
+        <div class="form-group">
+            <label>Book name:</label>
+            <input type="text" class="form-control name-input" placeholder="Name 🆕">
+        </div>
+        <div class="form-group">
+            <label>Book price:</label>
+            <input type="text" class="form-control price-input" placeholder="Price 💰">
+        </div>
+        <label>Book picture:</label>
+        <div class="custom-file">
+            <input type="file" class="custom-file-input">
+            <label class="custom-file-label">Choose picture 🗃</label>
+        </div>
+        <button class="btn btn-success btn-submit" onclick="readAndAddNewBook()" type='button'>Submit new book</button>
+    </form>
+
+    <form class="form-update-price hide">
+        <div class="update-price">
+            <label class="label-update">Update book price:</label>
+            <input type="text" class="form-control price-input-update" placeholder="New price 💰">
+            <button class="btn btn-dark btn-close" onclick="closeUpdateWindow()" type='button'>❌</button>
+            <button class="btn btn-warning btn-update" onclick="readAndUpdateBook()" type='button'>Update</button>
+        </div>
+    </form>
+
+    <div class="jumbotron hide">
+        <h2 class="display-5"></h2>
+        <h3 class="display-5 h3-read1"></h3>
+        <h3 class="display-5 h3-read2"></h3>
+        <h3 class="display-5 h3-read3"></h3>
+        <p class="p-read1"></p>
+        <p class="lead">
+            <a class="btn btn-outline-dark btn-sm" href="#" onclick="closeReadWindow()" role="button">❌ Close ❌</a>
+        </p>
+    </div>
+
+    <section class="books-container">
+        <table class="book-list">
+            <thead class="book-list-head">
+                <tr>
+                    <th>Id</th>
+                    <th data-th="name" onclick="sortBy(this)">Name</th>
+                    <th data-th="price" onclick="sortBy(this)">Price</th>
+                    <th data-th="inStock" onclick="sortBy(this)">In Stock</th>
+                    <th data-th="rate" onclick="sortBy(this)">Rate</th>
+                    <th>Image</th>
+                    <th colspan="3">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="book-list-body"></tbody>
+        </table>
+    </section>
+
+
+
+
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="js/util-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-main.js"></script>
+    <script src="lib/bootstrap/bootstrap.js"></script>
+
+</body>
+
+</html>

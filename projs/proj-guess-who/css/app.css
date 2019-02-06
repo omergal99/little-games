@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgb(251, 247, 253);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(54, 106, 148);
+    background-image: url("../img/genie\ lamp.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-blend-mode: multiply;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #fcf064;
+    font-size: 3em;
+    padding: 8px 0;
+    height: 200px;
+}
+
+header img {
+    height: 3em;
+    animation: MoveUpDown 5s linear infinite;
+    position: absolute;
+}
+
+@keyframes MoveUpDown {
+    0%,
+    100% {
+        top: 0;
+    }
+    50% {
+        top: 56px;
+    }
+}
+
+.wrong-fill {
+    margin-top: 8px;
+    color: #fc7878;
+    position: absolute;
+    animation: MoveUpDown 5s linear infinite;
+    left: 57vw;
+    font-size: 24px;
+    -webkit-text-stroke: 1px black;
+}
+
+main {
+    margin-top: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.new-quest {
+    width: 50vw;
+}
+
+.make-smartr-btn {
+    background-color: rgb(52, 95, 128);
+    color: #f5f5f5;
+    cursor: pointer;
+    border: none;
+    padding: 6px 8px;
+    font-weight: bold;
+}
+
+.make-smartr-btn:hover {
+    background-color: rgb(30, 64, 90);
+}
+
+.tree-btn {
+    background-color: rgb(105, 164, 209);
+    color: #f5f5f5;
+    cursor: pointer;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 2px 2px;
+}
+
+.tree-btn:hover {
+    font-weight: bold;
+    background-color: rgb(79, 150, 204);
+    font-size: 23px;
+    padding: 0;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: lightblue;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+.tree {
+    margin-top: 6px;
+    margin-left: 14px;
+    font-weight: bold;
+    background: #ffd5d5;
+}
+
+.tree ul li {
+    background: #ffe5e5;
+    list-style: none;
+}
+
+.tree ul li::before {
+    content: "֎ ";
+    color: rgb(69, 175, 236);
+}
+
+.hide {
+    display: none;
+}

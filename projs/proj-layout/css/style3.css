@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    margin: 0;
+}
+
+h4,
+p {
+    margin: 0;
+    padding-bottom: 6px;
+    color: rgb(216, 217, 218);
+}
+
+.row {
+    background-image: linear-gradient(to bottom, #233e57, #f2f9ff);
+    height: 100vh;
+    padding: 32px 40px;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding-bottom: 6px;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.column h4:first-letter {
+    text-transform: uppercase;
+}
+
+.column p {
+    text-indent: 15px;
+}
+
+.column:hover {
+    overflow: visible;
+}
+
+.column:nth-child(1) {
+    background-image: linear-gradient(to bottom, #2c5983, rgb(146, 162, 177));
+    animation-name: slideUp;
+    animation-duration: 2.5s;
+}
+
+.column:nth-child(2) {
+    background-image: linear-gradient(to bottom, #2c5983, rgb(146, 162, 177));
+    animation-name: slideUp;
+    animation-duration: 2.5s;
+}
+
+.column:nth-child(3) {
+    background-image: linear-gradient(to bottom, #2c5983, rgb(146, 162, 177));
+    animation-name: slideUp2;
+    animation-duration: 2.5s;
+}
+
+.column:nth-child(4) {
+    background-image: linear-gradient(to bottom, #2c5983, rgb(146, 162, 177));
+    animation-name: slideUp2;
+    animation-duration: 2.5s;
+}
+
+@keyframes slideUp {
+    0% {
+        margin-bottom: 100%;
+        height: 0;
+    }
+    100% {
+        margin-bottom: 0%;
+        transform: rotate3d(5, 5, 5, 360deg);
+        height: 50vh;
+    }
+}
+
+@keyframes slideUp2 {
+    0% {
+        margin-bottom: 100%;
+        height: 0;
+    }
+    100% {
+        margin-bottom: 0%;
+        height: 50vh;
+    }
+}
+
+.newsPaper {
+    text-align: center;
+    top: 500px;
+    font-size: 20px;
+}

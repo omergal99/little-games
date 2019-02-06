@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shula Game!</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/logo2.png" />
+</head>
+
+<body onload="initGame()" onkeydown="handleKey(event)">
+
+    <div class="sholaDivGame">
+        <h1>Shula Game!</h1>
+
+        <table class="detailsBar">
+            <tr class="line1">
+                <td>⛳</td>
+                <td>🏅</td>
+                <td colspan="2">🌞</td>
+                <td>⌛</td>
+            </tr>
+            <tr class="line2">
+                <td class="flags"></td>
+                <td class="score"></td>
+                <td colspan="2" class="smile" onmousedown="smileChange()" onmouseup="initGame()">
+                </td>
+                <td class="stopWatch"></td>
+            </tr>
+        </table>
+
+        <table class="levels">
+            <tr>
+                <td class="level" onclick="selectLevel(this,4,2)">4🤞4</td>
+                <td class="level" onclick="selectLevel(this,6,5)">6🤞6</td>
+                <td class="level" onclick="selectLevel(this,8,15)">8🤞8</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td class="hints" onclick="hintActive(this)"></td>
+            </tr>
+        </table>
+
+        <table class="gameBoard" oncontextmenu="return false">
+        </table>
+
+        <p class="winner hide">🤑 winner !!! 🤑</p>
+        <p class="loser hide">🤯 Hoo no 🤯</p>
+        <p class="best4 hide"></p>
+        <p class="best6 hide"></p>
+        <p class="best8 hide"></p>
+
+        <div class="fotter">
+            <button class="playAgainClass" onclick="initGame()">
+            Play Again <span style="font-size:14px">(space)</span> </button>
+            <button class="flagButton" onclick="MarkOnOff(this)"></button>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/util.js"></script>
+</body>
+
+</html>

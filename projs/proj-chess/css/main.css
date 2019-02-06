@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(77, 74, 74);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Arial';
+    color: rgb(221, 224, 224);
+}
+
+.black {
+    background-color: gray
+}
+
+.white {
+    background-color: rgb(236, 245, 245);
+}
+
+.selected {
+    outline: 4px solid orange;
+}
+
+.mark {
+    background-color: rgba(221, 186, 149, 0.822);
+    background: radial-gradient(rgba(125, 128, 127, 0.966) 17%, #51aa60 0, rgba(247, 158, 158, 0.795) 0, rgba(228, 175, 95, 0.767) 0);
+    cursor: pointer;
+}
+
+.center {
+    background-color: rgb(77, 61, 61);
+    margin-left: auto;
+    margin-right: auto;
+    border: 2.2px solid rgb(156, 195, 228);
+    margin-bottom: 10px;
+    border-spacing: 2px;
+    cursor: pointer;
+}
+
+.game-board td {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+button {
+    width: 110px;
+    height: 52px;
+    font-size: 1.6em;
+}

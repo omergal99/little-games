@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(242, 255, 233);
+}
+
+.form-new-book,
+.form-update-price {
+    margin: 6px;
+    padding: 6px;
+    border: 1.5px solid #67ad90;
+    max-width: 50vw;
+}
+
+.form-update-price {
+    background-color: rgb(231, 255, 214);
+    position: fixed;
+}
+
+.jumbotron {
+    background-color: rgba(231, 255, 214, 0.74);
+    position: fixed;
+    margin: 0;
+    padding: 4px;
+    max-width: 33.333333vw;
+}
+
+.custom-file-input {
+    cursor: pointer;
+}
+
+.btn-submit,
+.btn-close {
+    margin-top: 12px;
+}
+
+.btn-update {
+    margin-top: 12px;
+    margin-left: 30px;
+}
+
+.books-container {
+    margin-top: 12px;
+}
+
+.book-list td,
+th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.book-list th {
+    font-size: 20px;
+}
+
+.book-list th:nth-child(2),
+.book-list th:nth-child(3),
+.book-list th:nth-child(4),
+.book-list th:nth-child(5) {
+    cursor: pointer;
+}
+
+.book-list th:nth-child(2):hover,
+.book-list th:nth-child(3):hover,
+.book-list th:nth-child(4):hover,
+.book-list th:nth-child(5):hover {
+    background-color: rgb(199, 255, 159);
+}
+
+.btn-create-book {
+    width: 170px;
+    background-color: #5dc8fa;
+    border: 2px solid #5dc8fa;
+    color: rgb(31, 29, 29);
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 18px;
+    display: inline-block;
+    padding: 2px 2px;
+    margin: 6px 10px;
+}
+
+.btn-create-book:hover {
+    background-color: #274e61;
+    border: 2px solid #274e61;
+    color: rgb(248, 244, 244);
+}
+
+.hide {
+    display: none;
+}

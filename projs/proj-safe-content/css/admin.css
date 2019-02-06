@@ -1,0 +1,63 @@
+.back-btn {
+    background-color: #2e2e2e;
+    color: rgb(252, 241, 241);
+    font-weight: bold;
+    padding: 10px 18px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    margin: 6px;
+    display: block;
+    /* float: right; */
+}
+
+.back-btn {
+    opacity: 0.8;
+}
+
+.users-table {
+    width: 100%;
+}
+
+.users-table {
+    border: 2px solid #f3d7d7ad;
+    background-color: #f3d7d7ad;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+
+.users-table tr td {
+    background-color: #e7c5dd9d;
+    padding: 6px 0px;
+}
+
+.users-table tr th {
+    background-color: #804f719d;
+    color: #f8f1f6;
+    padding: 6px 0px;
+    cursor: pointer;
+}
+
+.users-table tr th:hover {
+    background-color: #5e3150d0;
+    color: #fcfcfc;
+}
+
+.users-div2 {
+    padding-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pictureArr {
+    width: 5.2em;
+    /* background-color: #a06d6d; */
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.pictureArr img {
+    width: 4.6em;
+    border-radius: 50%;
+}

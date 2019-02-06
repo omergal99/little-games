@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Shiri's Gallery</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/ca-gallery.css" rel="stylesheet">
+    <link href="img/logo.png" rel="icon">
+
+</head>
+
+<body id="page-top" onload="initPage()">
+    <div class="offcanvas-btn" onClick="openCanvas()">
+        <i class="fa fa-comment" aria-hidden="true"></i>
+    </div>
+    <aside class="offcanvas-aside">
+
+        <!-- Contact -->
+        <section id="contact">
+            <h4 class="contact-h4">Contact Me</h4>
+            <form>
+                <div class="form-group-side">
+                    <label>Your E-mail</label>
+                    <input type="email" class="form-control-mail col-lg-12" aria-describedby="emailHelp" placeholder="name@example.com">
+                </div>
+                <div class="form-group-side">
+                    <label>Subject</label>
+                    <input type="text" class="form-control-subject col-lg-12" placeholder="Type subject here">
+                </div>
+                <div class="form-group-side">
+                    <label>Massage Body</label>
+                    <textarea class="form-control-content col-lg-12" rows="3" placeholder="Type massage text here"></textarea>
+                </div>
+                <div class="form-group-side-btn">
+                    <button type="button" class="btn btn-info form-submit" onclick="submitMassage()">Submit</button>
+                    <button type="button" class="btn btn-light form-submit" onclick="cleanSubmitMassage()">Clean</button>
+                </div>
+            </form>
+        </section>
+
+    </aside>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">My Story</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">Interests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#me">Myself</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Text me 😉</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To my Story 📖</div>
+                <div class="intro-heading">You're look great Today!</div>
+                <a class="btn btn-xl js-scroll-trigger" href="#services">Look more</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">🌎 Interests 🌎</h2>
+                    <h3 class="section-subheading text-muted">The world divides into three for me</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4 class="service-heading">🎨 Creativity</h4>
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-linode fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <p class="text-muted para-interests">Creativity is a huge field, and it is undoubtedly an important component of the development of the world. Creativity is created from different situations which we wish to solve, change, improve, and thus think of a way to do so. Creativity
+                        is measured by how many ways to do it, and by comparing them. Some guidelines are branching thinking, thinking out of the box, multi-dimensional thinking and multi-directional, and no fear of failure - failure is also necessary
+                        🎨
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="service-heading">🚪 Openness</h4>
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-child fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <p class="text-muted para-interests">Openness is one of the most powerful tools a person can achieve in life. Openness at a high level means a basic understanding of the world foundations , including a world-view and a system-realistic vision. One of them is: Not to think
+                        primarily about yourself, along with reducing the ego, by looking at our environment and taking an interest in it. This can still be talked for hours, and a small hint for your continuation, is the understanding that every person
+                        is a very minor part of our universe 🚪</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="service-heading">🔆 Positivity</h4>
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <p class="text-muted para-interests">Positive posits an idea in which reality always occurs for the better. We create our reality, which usually comes from our thoughts, and positive thoughts come from loving yourself as you are, as well as accepting the environment as
+                        it is. And thus the essence of our world, which is positive, growing and prosperity, enriching, and enjoyable. This is one of the ways to 'touch happiness' which is finally our choice 🔆</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">🎪 Story 🎪</h2>
+                    <h3 class="section-subheading text-muted">Now it's time for a story</h3>
+                </div>
+            </div>
+
+            <div class="row main-modals-prot">
+                <!-- protofilo grid create in render -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Me -->
+    <section class="bg-light" id="me" style="padding: 0px;">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle profile-img" src="img/profile/shiri2.jpg" alt="">
+                    <h4>Shiri Ron</h4>
+                    <p class="text-muted">🍪 דובשנית קטנה</p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                            <!-- <a href="#"> -->
+                            <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <!-- <a href="#"> -->
+                            <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <!-- <a href="#"> -->
+                            <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-8 flex-align-center">
+                <p class="large text-muted  about-description">😎 Hello there!! I am a cute girl. Spend my time on Conding Academy course. I love food, espasially sushi-salmon. In my free time i talk with people from south america - and think often about go back Mexico. Now I am live in Tel-Aviv with
+                    some girls in comon apartment. do not think.. I am originaly from Kfar-Vradim.. some place in the planet.. far away.. Sooo in short i love my life, do yoga, get boring really fast! and my smile can conquer you very quickly 🚩
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 flex-align-center">
+                    <a href="https://vuejs.org" target="_blank">
+                        <img src="./img/ca-logo.png" alt="" width="250">
+                    </a>
+                </div>
+                <div class="col-md-4 flex-align-center">
+                    <ul class="list-inline social-buttons flex-align-center">
+                        <li class="list-inline-item">
+                            <!-- <a href="#"> -->
+                            <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item flex-align-center">
+                            <!-- <a href="#"> -->
+                            <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <!-- <a href="#"> -->
+                            <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 flex-align-center">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item">
+                            <a href="#">!תותחחח</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">!תעיף אותי למעלה</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <div class="main-port">
+        <!-- Modal 1 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div> -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here -->
+                                    <h2></h2>
+                                    <p class="para1-modal item-intro text-muted"></p>
+                                    <img class="img-fluid d-block mx-auto" src="" alt="">
+                                    <p class="para2-modal"></p>
+                                    <ul class="list-inline">
+                                        <li class="date-modal"></li>
+                                        <li class="client-modal"></li>
+                                        <li class="category-modal"></li>
+                                    </ul>
+                                    <div class="modal-btn">
+                                        <button class="btn btn-primary" type="button" data-dismiss="modal">
+                                            <i class="fa fa-times"></i>
+                                            Close Project</button>
+                                        <button class="btn btn-success" type="button" onclick="openGame()">
+                                            <i class="fa fa-check"></i>
+                                            Let's Play</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/ca-gallery.js"></script>
+    <script src="js/offCanvas.js"></script>
+    <script src="js/util-service.js"></script>
+    <script src="js/main-service.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

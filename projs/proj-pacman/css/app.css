@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(95, 95, 95);
+  color: white;
+}
+
+.cell {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.formLine {
+  margin: 10px;
+  padding: 10px;  
+  background-color: cornflowerblue;
+}
+
+.board-container table {
+  background-color: rgb(32, 30, 30);
+
+}
+
+.hide {
+  display:none;
+}
+
+button {
+  background-color: rgb(223, 175, 112);
+  border: 2px solid rgb(223, 175, 112);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 18px;
+  display: block;
+  padding: 10px 20px;
+  margin-left: 106px;
+}
+
+button:hover {
+  background-color: #22363a;
+  border: 2px solid #22363a;
+  color: rgb(255, 255, 255);
+}
+
+p{
+  background-color: rgb(136, 135, 180);
+  border: 2px solid rgb(136, 135, 180);
+  color: black;
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 18px;
+  width: 120px;
+  max-width: 135px;
+  text-align: center;
+  display: block;
+  padding: 4px 10px;
+  margin-left: 135px;
+}

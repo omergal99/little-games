@@ -1,0 +1,188 @@
+body {
+    background-color: rgb(255, 238, 223);
+}
+
+.sholaDivGame {
+    width: 410px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: rgb(255, 238, 223);
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: arial;
+    margin: 0;
+    font-size: 28px;
+}
+
+.detailsBar {
+    border: 2.2px solid rgb(66, 59, 56);
+    background-color: rgba(48, 48, 43, 0.705);
+    margin: 4px auto;
+    text-align: center;
+    border-spacing: 4px;
+}
+
+.line1 td {
+    width: 70px;
+    background-color: rgb(228, 156, 62);
+    font-family: arial;
+    font-size: 20px;
+}
+
+.line2 {
+    color: rgb(230, 230, 230);
+    background-color: #50acaf;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.smile {
+    cursor: pointer;
+}
+
+.smile:hover {
+    background-color: rgb(186, 230, 236);
+}
+
+.levels {
+    margin: 0 auto;
+    text-align: center;
+    border-spacing: 6px;
+}
+
+.level {
+    background-color: #31bdc2;
+    color: rgb(36, 32, 32);
+    cursor: pointer;
+    border: 1.5px solid rgb(43, 83, 116);
+    font-weight: bold;
+    font-family: arial;
+    font-size: 20px;
+    width: 50px;
+    padding: 2px 4px;
+}
+
+.level:nth-child(2) {
+    background-color: #175255;
+    border: 1.5px solid #439497;
+    color: rgb(226, 226, 226);
+}
+
+.level:hover {
+    background-color: #175255;
+    border: 1.5px solid #439497;
+    color: rgb(211, 206, 206);
+}
+
+.hints {
+    background-color: rgb(243, 232, 167);
+    border: 1.5px solid rgb(226, 207, 96);
+    color: rgb(36, 32, 32);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: arial;
+    width: 70px;
+    font-size: 22px;
+    padding: 2px 0px;
+}
+
+.hints:hover {
+    background-color: rgb(243, 233, 86);
+}
+
+.gameBoard {
+    background-image: linear-gradient(to bottom right, #f0c140, #e2772f);
+    margin: 6px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.bodyBoard tr td {
+    width: 43px;
+    height: 43px;
+    cursor: pointer;
+    color: rgb(247, 247, 247);
+    background-color: #ffe7b4;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tdHover:hover {
+    transition: 0.2s;
+    background-color: #ffc13c;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Courier;
+    margin: 0;
+}
+
+.winner {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    font-family: Courier;
+}
+
+.loser {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Courier;
+    margin: 0;
+}
+
+.fotter {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.playAgainClass {
+    background-color: #f8af42;
+    border: 2px solid #f8af42;
+    color: rgb(31, 29, 29);
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 6px 20px;
+}
+
+.playAgainClass:hover {
+    background-color: #22363a;
+    border: 2px solid #22363a;
+    color: rgb(255, 255, 255);
+}
+
+.flagButton {
+    background-color: #fcbb5a;
+    border: 2px solid #fcbb5a;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 34px;
+    width: 56px;
+    height: 51px;
+    padding-bottom: 4px;
+}
+
+.flagButton:hover {
+    border: 2px solid #22363a;
+    color: rgb(255, 255, 255);
+}
+
+.hide {
+    display: none;
+}

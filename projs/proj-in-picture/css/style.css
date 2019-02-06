@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+.divPro {
+    width: 280px;
+    height: 500px;
+    background-color: rgb(235, 193, 159);
+    /* margin-top: 10px; */
+    /* display: table-cell; */
+    float: left;
+}
+
+.divActors {
+    width: 356px;
+    height: 500px;
+    background-color: rgb(136, 182, 226);
+    margin-top: 10px;
+    /* display: table-cell; */
+    margin-left: 290px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+table .img td img {
+    max-height: 250px;
+    max-width: 440px;
+    border: 2.2px solid rgb(156, 195, 228);
+}
+
+table .img2 td img {
+    max-height: 250px;
+    max-width: 330px;
+    border: 2.2px solid rgb(228, 197, 156);
+}
+
+table .ques td {
+    width: 60px;
+    height: 20px;
+    font-size: 20px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+table .opt td {
+    width: 120px;
+    height: 60px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border: 1.5px solid steelblue;
+    font-family: arial;
+    font-size: 18px;
+}
+
+table .opt td:hover {
+    color: rgb(255, 255, 255);
+}
+
+table .opt2 td {
+    width: 120px;
+    height: 60px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(204, 121, 83);
+    font-family: arial;
+    font-size: 18px;
+}
+
+table .opt2 td:hover {
+    color: rgb(255, 255, 255);
+}
+
+.wrongStyle {
+    background-color: rgb(167, 84, 84);
+    color: aliceblue;
+}
+
+.rightStyle {
+    background-color: rgb(40, 105, 75);
+    color: aliceblue;
+}
+
+.hide {
+    display: none;
+}
+
+.css {
+    text-align: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+button {
+    background-color: rgb(223, 175, 112);
+    border: 2px solid rgb(223, 175, 112);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #22363a;
+    border: 2px solid #22363a;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}

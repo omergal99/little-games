@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png" />
+    <title>Actors Quiz</title>
+</head>
+
+<body onload="initGame();initGameActors()">
+    <div class="divPro">
+        <table>
+            <tr class="ques">
+                <td colspan="2">Who is in the picture?</td>
+            </tr>
+            <tr class="img">
+            </tr>
+        </table>
+        <table>
+            <tr class="opt">
+            </tr>
+        </table>
+        <p id="winnerId" class="hide css">winner !!!</p>
+        <p id="wrongId" class="hide css">wrong :(</p>
+        <p id="rightId" class="hide css">right :)</p>
+        <button id="playAgainId" class="" onclick="initGame()">Play Again</button>
+    </div>
+    <div class="divActors">
+        <table>
+            <tr class="ques">
+                <td colspan="2">Who is in the picture?</td>
+            </tr>
+            <tr class="img2">
+            </tr>
+        </table>
+        <table>
+            <tr class="opt2">
+            </tr>
+        </table>
+        <p id="winnerId2" class="hide css">winner !!!</p>
+        <p id="wrongId2" class="hide css">wrong :(</p>
+        <p id="rightId2" class="hide css">right :)</p>
+        <button id="playAgainId2" class="" onclick="initGameActors()">Play Again</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
