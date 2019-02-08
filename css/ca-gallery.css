@@ -325,6 +325,7 @@ header.masthead .intro-text .intro-heading {
     max-width: 400px;
     margin: 0 auto;
     cursor: pointer;
+    text-align: center;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
