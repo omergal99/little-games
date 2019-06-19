@@ -1,2 +1,3 @@
 # my-protofilio
-protofilio of my games i made few month ago
+### Here you can see little games of the beginning
+https://omergal99.github.io/my-protofilio/
